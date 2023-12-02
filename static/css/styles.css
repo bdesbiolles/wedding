@@ -111,7 +111,6 @@ img, blockquote, .container {
     display: block;
     max-width: var(--body-max-width);
     margin: var(--line-height-size) auto;
-    border: 1px solid var(--foreground-colour);
     box-sizing: border-box;
 }
 
@@ -166,7 +165,6 @@ blockquote > footer > a {
 }
 
 .wedding-logo {
-    border: 0px;
     width: 80%;
     height: 80%;
 }
@@ -186,9 +184,10 @@ blockquote > footer > a {
     flex-direction: column;
 }
 
-.initials {
-    font-family: 'Alex Brush';
-    margin-bottom: 0px;
+.footer-signature {
+    width: 15%;
+    height: 15%;
+    margin-bottom: 2px;
 }
 
 .mariage_date_footer {

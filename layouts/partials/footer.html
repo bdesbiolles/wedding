@@ -1,6 +1,9 @@
 <footer>
+    {{ $footer := resources.Get "images/footer.png" }}
+    <div class="footer-img">
+      <img class="footer-signature" src="{{ $footer.RelPermalink }}">
+    </div>
   <div class="signature">
-    <h2 class="initials"> V &B </h2>
     <p class="mariage_date_footer">11.05.2023</p>
   </div>
     <p>
