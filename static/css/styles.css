@@ -25,7 +25,7 @@
 
 :root {
     --main-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-    --old-style-font: 'Old Standard TT'; 
+    --old-style-font: 'Old Standard TT';
     --cream: #FAF1E4;
     --light-green: #CEDEBD;
     --mid-green: #9EB384;
@@ -44,21 +44,28 @@
     --large-size: 54px;
     --body-max-width: 702px;
     --narrow-content-margin: var(--line-height-size)
-  }
+}
 
-  * {
+@media (max-width: 720px) {
+    :root {
+        --body-max-width: calc(100vw - (var(--smaller-size) * 2));
+        --narrow-content-margin: 0px;
+    }
+}
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-  }
+}
 
 html {
     font-family: var(--main-font);
     font-weight: 400;
-    font-size:  var(--font-size);
+    font-size: var(--font-size);
     line-height: var(--line-height-size);
     color: var(--foreground-colour);
-    
+
 }
 
 body {
@@ -75,13 +82,21 @@ header {
     align-items: center;
 }
 
-  h1, h2, h3, p, ol, ul, details {
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+details {
     margin: var(--small-size) var(--narrow-content-margin);
     color: var(--writing-green);
 }
 
-h1, h2, h3 {
-    
+h1,
+h2,
+h3 {
+
     font-family: var(--old-style-font);
 }
 
@@ -103,11 +118,14 @@ h3 {
 
 
 
-ol, ul {
+ol,
+ul {
     padding-inline-start: 36px;
 }
 
-img, blockquote, .container {
+img,
+blockquote,
+.container {
     display: block;
     max-width: var(--body-max-width);
     margin: var(--line-height-size) auto;
@@ -118,11 +136,11 @@ img {
     background-color: var(--half-way-shade);
 }
 
-blockquote > * {
+blockquote>* {
     margin: var(--line-height-size);
 }
 
-blockquote > footer > a {
+blockquote>footer>a {
     word-break: break-all;
 }
 
@@ -143,6 +161,7 @@ blockquote > footer > a {
     background-color: var(--writing-green);
     font-family: var(--old-style-font);
 }
+
 .nav-item {
     text-decoration: none;
     color: inherit;
@@ -150,7 +169,7 @@ blockquote > footer > a {
 
 .nav-item:hover {
     color: var(--blue-green);
-    
+
 }
 
 .main_title {
@@ -161,7 +180,7 @@ blockquote > footer > a {
 
 .mariage_date {
     font-family: var(--old-style-font);
-    font-size:  var(--font-size);
+    font-size: var(--font-size);
 }
 
 .wedding-logo {
@@ -192,7 +211,7 @@ blockquote > footer > a {
 
 .mariage_date_footer {
     font-family: var(--old-style-font);
-    font-size:  var(--font-size);
+    font-size: var(--font-size);
     border-top: 1px solid var(--foreground-colour);
     margin-top: 0px;
     padding-top: 8px;
@@ -204,10 +223,3 @@ footer {
     align-items: center;
     font-size: var(--small-size);
 }
-
-@media (max-width: 720px) {
-    :root {
-      --body-max-width: calc(100vw - (var(--smaller-size) * 2));
-      --narrow-content-margin: 0px;
-    }
-  }
