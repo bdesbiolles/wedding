@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Alex Brush';
+    font-weight: 400;
+    src: url("../fonts/AlexBrush-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    src: url("../fonts/OldStandardTT-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    font-weight: bold;
+    src: url("../fonts/OldStandardTT-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    src: url("../fonts/OldStandardTT-Italic.ttf");
+    font-style: italic;
+}
+
+:root {
+    --main-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    --old-style-font: 'Old Standard TT'; 
+    --cream: #FAF1E4;
+    --light-green: #CEDEBD;
+    --mid-green: #9EB384;
+    --dark-green: #435334;
+    --blue-green: #a6bfc4;
+    --writing-green: #315760;
+
+    --foreground-colour: #3b3b3b;
+    --background-colour: #ffffff;
+
+    --smallest-size: 3px;
+    --smaller-size: 9px;
+    --small-size: 12px;
+    --font-size: 18px;
+    --line-height-size: 27px;
+    --large-size: 54px;
+    --body-max-width: 702px;
+    --narrow-content-margin: var(--line-height-size)
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size:  var(--font-size);
+    line-height: var(--line-height-size);
+    color: var(--foreground-colour);
+    
+}
+
+body {
+    background-color: var(--background-colour);
+    max-width: var(--body-max-width);
+    margin: var(--large-size) auto;
+    color: var(--writing-green);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  h1, h2, h3, p, ol, ul, details {
+    margin: var(--small-size) var(--narrow-content-margin);
+    color: var(--writing-green);
+}
+
+h1, h2, h3 {
+    
+    font-family: var(--old-style-font);
+}
+
+h1 {
+    margin-top: var(--large-size);
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+
+ol, ul {
+    padding-inline-start: 36px;
+}
+
+img, blockquote, .container {
+    display: block;
+    max-width: var(--body-max-width);
+    margin: var(--line-height-size) auto;
+    border: 1px solid var(--foreground-colour);
+    box-sizing: border-box;
+}
+
+img {
+    background-color: var(--half-way-shade);
+}
+
+blockquote > * {
+    margin: var(--line-height-size);
+}
+
+blockquote > footer > a {
+    word-break: break-all;
+}
+
+
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--background-colour);
+    background-color: var(--writing-green);
+    font-family: var(--old-style-font);
+}
+.nav-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item:hover {
+    color: var(--blue-green);
+    
+}
+
+.main_title {
+    font-family: 'Alex Brush', cursive;
+    font-size: 64px;
+
+}
+
+.mariage_date {
+    font-family: var(--old-style-font);
+    font-size:  var(--font-size);
+}
+
+.wedding-logo {
+    border: 0px;
+}
+
+.section__split {
+    display: flex;
+    flex-direction: row;
+}
+
+.google-map {
+    width: 600;
+    height: 450;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.initials {
+    font-family: 'Alex Brush';
+    margin-bottom: 0px;
+}
+
+.mariage_date_footer {
+    font-family: var(--old-style-font);
+    font-size:  var(--font-size);
+    border-top: 1px solid var(--foreground-colour);
+    margin-top: 0px;
+    padding-top: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-size);
+}

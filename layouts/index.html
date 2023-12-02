@@ -1,0 +1,40 @@
+{{ define "main" }}
+<header>
+  <!-- <h1 class="main_title">Victoire & Baptiste</h1>
+  <p class="mariage_date">11 Mai 2024</p> -->
+  {{ $image := resources.Get "images/v-et-b-date.png" }}
+  <img class="wedding-logo" src="{{ $image.RelPermalink }}">
+</header>
+  <main>
+    <h1>Le Mariage</h1>
+    <section class="section__split">
+      <div>
+        <h2>Église</h2>
+        <p>{{ .Params.religious.name }}<p>
+          <h3>Date</h3>
+          <p>{{ .Params.religious.date }} à {{ .Params.religious.time }}</p>
+          <h3>Adresse</h3>
+          {{ range .Params.religious.address }}
+            <p>{{ . }}</p>
+          {{ end }}
+      </div>
+      <div>
+        <h2>Réception</h2>
+      <p>{{ .Params.party.name }}<p>
+        <h3>Date</h3>
+        <p>{{ .Params.party.date }} à {{ .Params.party.time }}</p>
+        <h3>Adresse</h3>
+        {{ range .Params.party.address }}
+          <p>{{ . }}</p>
+        {{ end }}
+      </div>
+    </section>
+    <section>
+      {{ $t := .Site.GetPage "/section/order-of-events" }}
+        <h1>{{$t.Params.title}}</h1>
+        <section>
+            {{ $t.Content }}
+        </section>
+    </section>
+  </main>
+{{ end }}

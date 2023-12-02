@@ -1,0 +1,11 @@
+{{ define "main" -}}
+<main>
+    <div class="content">
+    <h1>
+        {{.Page.Title}}
+    </h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10823.050860517234!2d2.6835479999999996!3d47.299436449999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f0079d92e44341%3A0xc4bac8f31887fc1c!2sLe%20Ch%C3%A2teau%20de%20la%20Croix%2C%2018250%20Neuilly-en-Sancerre!5e0!3m2!1sfr!2sfr!4v1695223434542!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    {{.Page.Content}}
+</div>
+</main>
+{{- end }}
