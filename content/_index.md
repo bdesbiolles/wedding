@@ -8,7 +8,7 @@ religious:
 party:
     name: "Chateau de la Croix"
     address:
-        address1: "Route d humbligny"
+        address1: "Route d'Humbligny"
         address2: "18250 Neuilly-en-Sancerre"
 
 ---
