@@ -1,9 +1,7 @@
 {{ define "main" }}
 <header>
-  <!-- <h1 class="main_title">Victoire & Baptiste</h1>
-  <p class="mariage_date">11 Mai 2024</p> -->
-  {{ $image := resources.Get "images/v-et-b-date.png" }}
-  <img class="wedding-logo" src="{{ $image.RelPermalink }}">
+  {{ $logo := resources.Get "images/v-et-b-date.png" }}
+  <img class="wedding-logo" src="{{ $logo.RelPermalink }}">
 </header>
   <main>
     <h1>Le Mariage</h1>
