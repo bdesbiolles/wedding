@@ -167,6 +167,8 @@ blockquote > footer > a {
 
 .wedding-logo {
     border: 0px;
+    width: 80%;
+    height: 80%;
 }
 
 .section__split {

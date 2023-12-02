@@ -11,8 +11,6 @@
       <div>
         <h2>Église</h2>
         <p>{{ .Params.religious.name }}<p>
-          <h3>Date</h3>
-          <p>{{ .Params.religious.date }} à {{ .Params.religious.time }}</p>
           <h3>Adresse</h3>
           {{ range .Params.religious.address }}
             <p>{{ . }}</p>
@@ -21,8 +19,6 @@
       <div>
         <h2>Réception</h2>
       <p>{{ .Params.party.name }}<p>
-        <h3>Date</h3>
-        <p>{{ .Params.party.date }} à {{ .Params.party.time }}</p>
         <h3>Adresse</h3>
         {{ range .Params.party.address }}
           <p>{{ . }}</p>
