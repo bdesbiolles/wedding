@@ -46,6 +46,13 @@
     --narrow-content-margin: var(--line-height-size)
   }
 
+  @media (max-width: 720px) {
+    :root {
+      --body-max-width: calc(100vw - (var(--smaller-size) * 2));
+      --narrow-content-margin: 0px;
+    }
+  }
+
   * {
     margin: 0px;
     padding: 0px;
