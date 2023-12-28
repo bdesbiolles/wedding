@@ -13,8 +13,10 @@ title: "Logements"
     336 chemin de l’Avoinerie, 18250 NEUILLY-EN-SANCERRE – 06 09 27 16 76
 - Les Barrats (17 pers) 2,2km\
     Les Barras, 18300 SENS-BEAUJEU – 06 26 61 52 68
-- Le Gite des Grenouilles (6 pers) 3km\
-    18250 NEUVY DEUX CLOCHERS – 06 80 11 82 17
+- ~~Le Gite des Grenouilles (6 pers) 3km\
+    18250 NEUVY DEUX CLOCHERS – 06 80 11 82 17~~
+- Gite  (6 à 8 pers) 3km\
+    3340 route d'Henrichemont, les Gatelles, 18250, NEUVY DEUX CLOCHERS - 06 63 27 15 25
 - Le Jardin de Mounette (10 pers) 3km\
     La brosse Imbault,18250 NEUVY- deux CLOCHET – 06 61 34 28 31
 - Les Potiers (4 pers) 3,2km\
