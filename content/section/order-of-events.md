@@ -18,3 +18,7 @@ Repas puis soirée dans l'orangeraie du Chateaux de la Croix
 ### Plus tard dans la nuit - Soirée 
 
 On compte sur vous pour faire la fête jusqu'au bout de la nuit 💃 🕺
+
+### Dimanche 11h
+
+Vous êtes attendu pour un brunch au Chateau ☕ 🥐
